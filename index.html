@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Examples</title>
+    <style>
+        * 
+        {
+            margin: 0;
+            padding: 0;
+        }
+        body 
+        {
+            background-color: blue;
+        }
+        h2
+        {
+            color: white;
+            padding: 10px;
+            margin-left: 650px;
+            margin-bottom: 0;
+            margin-top: 50px;
+            gap: 0px;
+        }
+        .container
+        {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            grid-template-columns: repeat(12, 100px); 
+            grid-template-rows: repeat(6, 100px); 
+            margin-left: 450px;
+            margin-top: 75px;
+            gap: 10px;
+            padding: 20px;
+        }
+        .box 
+        {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .box1 
+        {
+            grid-column: 1 / span 2; 
+            grid-row: 1 / span 2;    
+        }
+        .box2 
+        {
+            grid-column: 3 / span 2; 
+            grid-row: 1 / span 1;   
+        }
+        .box3 
+        {
+            grid-column: 5 / span 4; 
+            grid-row: 1 / span 1;     
+        }
+        .box4 
+        {
+            grid-column: 3 / span 2; 
+            grid-row: 2 / span 1;    
+        }
+        .box5 
+        {
+            grid-column: 7 / span 2; 
+            grid-row: 2 / span 1; 
+        }
+        .box6 
+        {
+            grid-column: 1 / span 2; 
+        }
+        .box7 
+        {
+            grid-column: 3 / span 2; 
+            grid-row: 3 / span 2;    
+        }
+        .box8 
+        {
+            grid-column: 5/ span 2; 
+            grid-row: 2 / span 2;    
+        }
+        .box9 
+        {
+            grid-column: 7 / span 2; 
+        }
+        .box10 
+        {
+            grid-column: 1 / span 2;     
+        }
+        .box11 
+        {
+            grid-column: 5 / span 4; 
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Grid examples</h2>
+    <div class="container">
+        <div class="box box1">Masonry 1</div>
+        <div class="box box2">Responsive</div>
+        <div class="box box3">Overlap</div>
+        <div class="box box4">Fluid</div>
+        <div class="box box5">Negative Space</div>
+        <div class="box box6">Flexible Breadth</div>
+        <div class="box box7">Masonry 2</div>
+        <div class="box box8">Explicitly Placed</div>
+        <div class="box box9">Masonry 3</div>
+        <div class="box box10">DOM Order</div>
+        <div class="box box11">Named Tracks</div>
+    </div>
+</body>
+</html>
